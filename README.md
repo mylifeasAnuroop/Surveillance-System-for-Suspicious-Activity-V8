@@ -25,9 +25,9 @@ This project aims to enhance security in public spaces like schools by detecting
 
 Install the required dependencies using pip:
 
-'''bash
+```bash
 pip install ultralytics==8.0.196 roboflow Flask opencv-python Pillow
-'''
+```
 
 ## Usage
 
@@ -40,9 +40,9 @@ pip install ultralytics==8.0.196 roboflow Flask opencv-python Pillow
 
 2. **Run the Flask application**:
 
-   \`\`\`bash
+   ```bash
    python app.py
-   \`\`\`
+  ```
 
 3. **Access the application**:
 
@@ -77,24 +77,24 @@ Collected and annotated data using Roboflow, then downloaded the dataset for YOL
 
 ### YOLOv8 Model Integration
 
-\`\`\`python
+```python
 from ultralytics import YOLO
 
 model = YOLO('path/to/best.pt')
 
 # Example of running detection on an image
 results = model('path/to/image.jpg')
-\`\`\`
+```
 
 ### Data Preparation with Roboflow
 
-\`\`\`python
+```python
 from roboflow import Roboflow
 
 rf = Roboflow(api_key="YOUR_API_KEY")
 project = rf.workspace().project("your-project-name")
 dataset = project.version(1).download("yolov8")
-\`\`\`
+```
 
 ## Conclusion
 
