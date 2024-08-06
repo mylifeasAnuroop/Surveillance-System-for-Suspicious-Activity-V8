@@ -25,11 +25,10 @@ This project aims to enhance security in public spaces like schools by detecting
 
 Install the required dependencies using pip:
 
-\`\`\`
+'''
 bash
 pip install ultralytics==8.0.196 roboflow Flask opencv-python Pillow
-
-\`\`\`
+'''
 
 ## Usage
 
