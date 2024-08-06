@@ -27,16 +27,16 @@ Install the required dependencies using pip:
 
 '''bash
 pip install ultralytics==8.0.196 roboflow Flask opencv-python Pillow
-
+'''
 
 ## Usage
 
 1. **Clone the repository**:
 
-   \`\`\`bash
+   ```bash
    git clone https://github.com/mylifeasAnuroop/Surveillance-System-for-Suspicious-Activity-V8.git
    cd Surveillance-System-for-Suspicious-Activity-V8
-   \`\`\`
+   ```
 
 2. **Run the Flask application**:
 
