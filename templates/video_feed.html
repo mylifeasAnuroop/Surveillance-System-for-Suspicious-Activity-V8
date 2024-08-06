@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Video Feed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eaf7f0; /* Light green background */
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px; /* Increased width for layout */
+            margin: auto;
+            background-color: #ffffff; /* White container background */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center align text */
+        }
+        h2 {
+            color: #10743b; /* Dark green heading */
+            margin-bottom: 20px;
+        }
+        .video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .back-button {
+            background-color: #4CAF50; /* Green button background */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: #45a049; /* Darker green hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Real-Time Video Feed</h2>
+        <video id="video_feed" autoplay controls class="video"></video>
+        <br>
+        <a href="/" class="back-button">Back to Home</a>
+    </div>
+    <script>
+        var video = document.getElementById("video_feed");
+        video.src = "/video_feed";
+    </script>
+</body>
+</html>
