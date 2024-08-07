@@ -42,7 +42,7 @@ pip install ultralytics==8.0.196 roboflow Flask opencv-python Pillow
 
    ```bash
    python app.py
-  ```
+   ```
 
 3. **Access the application**:
 
