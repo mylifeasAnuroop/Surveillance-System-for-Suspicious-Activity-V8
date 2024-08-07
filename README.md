@@ -46,7 +46,7 @@ pip install ultralytics==8.0.196 roboflow Flask opencv-python Pillow
 
 3. **Access the application**:
 
-   Open your web browser and go to \`http://127.0.0.1:5000\`.
+   Open your web browser and go to `http://127.0.0.1:5000`.
 
 4. **Upload an image or video, or use the webcam** to perform detection.
 
@@ -58,16 +58,16 @@ The Flask application handles routing for the web interface, allowing users to u
 
 The main routes in the Flask application are:
 
-- **Home Page (\`/\`)**: Renders the home page (\`index.html\`).
-- **Image Prediction (\`/predict_img\`)**: Handles image file uploads and performs object detection.
-- **Video Prediction (\`/predict_video\`)**: Handles video file uploads and performs real-time object detection.
-- **Webcam Feed (\`/webcam_feed\`)**: Provides a real-time webcam feed with object detection.
+- **Home Page (`/`)**: Renders the home page (`index.html`).
+- **Image Prediction (`/predict_img`)**: Handles image file uploads and performs object detection.
+- **Video Prediction (`/predict_video`)**: Handles video file uploads and performs real-time object detection.
+- **Webcam Feed (`/webcam_feed`)**: Provides a real-time webcam feed with object detection.
 
-The complete Flask app code is located in the \`app.py\` file. You can view and modify it as needed.
+The complete Flask app code is located in the `app.py` file. You can view and modify it as needed.
 
 ### YOLOv8 Model
 
-The YOLOv8 model is imported and used in the Flask routes for detection, fine-tuned with the weights saved in \`best.pt\`.
+The YOLOv8 model is imported and used in the Flask routes for detection, fine-tuned with the weights saved in `best.pt`.
 
 ### Data Preparation with Roboflow
 
@@ -84,7 +84,7 @@ model = YOLO('path/to/best.pt')
 
 # Example of running detection on an image
 results = model('path/to/image.jpg')
-```
+
 
 ### Data Preparation with Roboflow
 
